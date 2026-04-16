@@ -1,0 +1,29 @@
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #1976d2 0%, #dc004e 100%);
+  color: white;
+  padding: 64px 0;
+}
+.hero .hero-container {
+  text-align: center;
+}
+.hero .hero-container h1 {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.hero .hero-container h6 {
+  margin-bottom: 24px;
+}
+.hero .hero-container .hero-button {
+  margin-top: 16px;
+}
+
+/* Feature Cards */
+.feature-card {
+  padding: 32px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}/*# sourceMappingURL=Home.css.map */

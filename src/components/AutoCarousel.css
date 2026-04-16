@@ -1,0 +1,105 @@
+/* Carousel */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-wrapper .carousel-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+.carousel-wrapper .carousel-slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  z-index: 1;
+}
+.carousel-wrapper .carousel-slide > div {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  position: relative;
+}
+.carousel-wrapper .carousel-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: transform 0.8s ease-in-out;
+}
+.carousel-wrapper .carousel-slide img:hover {
+  transform: scale(1.05);
+}
+.carousel-wrapper .overlay-text {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.4;
+  max-width: 80%;
+  backdrop-filter: blur(4px);
+}
+.carousel-wrapper .overlay-text h6 {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+@media (max-width: 900px) {
+  .carousel-wrapper .overlay-text {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+    bottom: 12px;
+    left: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .carousel-wrapper .overlay-text {
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    bottom: 8px;
+    left: 8px;
+    max-width: 90%;
+  }
+}
+.carousel-wrapper .arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+.carousel-wrapper .arrow-button:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.carousel-wrapper .arrow-button.left {
+  left: 8px;
+}
+.carousel-wrapper .arrow-button.right {
+  right: 8px;
+}
+
+/* Carousel Titles */
+.carousel-title {
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}/*# sourceMappingURL=AutoCarousel.css.map */

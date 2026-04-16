@@ -5,10 +5,12 @@ import {
   Link as MUILink,
   Stack,
   Divider,
+  Link,
 } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { color } from "framer-motion";
 
 export default function Footer() {
   return (
@@ -136,9 +138,7 @@ export default function Footer() {
             </Typography>
           </Box>
         </Stack>
-
         <Divider sx={{ my: 4, borderColor: "rgba(255,255,255,0.2)" }} />
-
         {/* bottom note */}
         <Typography
           variant="caption"
@@ -148,6 +148,15 @@ export default function Footer() {
         >
           © {new Date().getFullYear()} Meubeldiscount Bzoon. Alle rechten
           voorbehouden.
+        </Typography>
+        <Typography align="center">
+          <Link
+            sx={{ color: "white" }}
+            href="https://vince1510.github.io/portfolio_v3/"
+            target="_blank"
+          >
+            Gemaakt door Vince van Apeldoorn
+          </Link>
         </Typography>
       </Container>
     </Box>

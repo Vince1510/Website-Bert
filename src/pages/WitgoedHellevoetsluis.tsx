@@ -69,12 +69,14 @@ export default function WitgoedHellevoetsluis() {
               Door enorme drukte en omzet snelheid is het niet meer mogelijk om
               de website bij te houden. Voor de actuele voorraad bel ons gerust
               op of kom gezellig langs in de winkel: 0181 316 896 / 06 2907
-              2906.
+              2906. Wil je regelmatig een update krijgen van het witgoed dat bij
+              ons binnen komt? Wordt lid van onze Facebook pagina.
             </Typography>
             <Typography variant="body1" paragraph>
-              Witgoed wordt door ons ingekocht op een betrouwbaar adres. Deze
+              Witgoed wordt door ons ingekocht op betrouwbare adressen. Deze
               machines worden eerst nagekeken en eventueel gerepareerd voordat
-              ze in de winkel terechtkomen. Ook zit er 3 maanden garantie op.
+              ze in de winkel terechtkomen. Op deze machines zit altijd 3
+              maanden garantie.
             </Typography>
           </Box>
 
