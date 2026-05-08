@@ -61,9 +61,7 @@ export default function WitgoedHellevoetsluis() {
           </Box>
 
           {/* Page Title */}
-          <Typography variant="h4" gutterBottom>
-            Witgoed Hellevoetsluis
-          </Typography>
+          <Typography variant="h4">Witgoed Hellevoetsluis</Typography>
           <Box sx={{ mt: 4 }}>
             <Typography variant="body1" paragraph>
               Door enorme drukte en omzet snelheid is het niet meer mogelijk om
@@ -87,15 +85,9 @@ export default function WitgoedHellevoetsluis() {
                 <Card>
                   <CardMedia
                     component="img"
-                    sx={{ height: 250, objectFit: "contain" }}
                     image={product.image}
                     alt={product.name}
                   />
-                  <CardContent>
-                    <Typography variant="h6" align="center">
-                      {product.name}
-                    </Typography>
-                  </CardContent>
                 </Card>
               </Grid>
             ))}

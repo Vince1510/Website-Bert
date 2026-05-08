@@ -29,21 +29,18 @@ export default function Nav() {
   return (
     <AppBar position="static" color="primary" elevation={2}>
       <Toolbar>
-        <Typography
-          variant="h6"
-          component={Link}
-          to="/"
-          sx={{ flexGrow: 1, textDecoration: "none", color: "inherit" }}
-        >
-          Witgoed Hellevoetsluis
+        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+          <Link to="/" style={{ textDecoration: "none", color: "inherit" }}>
+            Witgoed Hellevoetsluis
+          </Link>
         </Typography>
 
         <Box
           sx={{
             gap: 1,
             display: { xs: "none", sm: "flex" },
-            "@media (max-width:719px)": { display: "none" },
-            "@media (min-width:720px)": { display: "flex" },
+            "@media (max-width:798px)": { display: "none" },
+            "@media (min-width:800px)": { display: "flex" },
           }}
         >
           <Button
@@ -162,7 +159,7 @@ export default function Nav() {
           sx={{
             display: "none",
             ml: 1,
-            "@media (max-width:719px)": { display: "inline-flex" },
+            "@media (max-width:799px)": { display: "inline-flex" },
           }}
         >
           <Hamburger />

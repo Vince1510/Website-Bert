@@ -78,15 +78,9 @@ export default function UniqueFightstore() {
                 <Card>
                   <CardMedia
                     component="img"
-                    sx={{ height: 250, objectFit: "contain" }}
                     image={product.image}
                     alt={product.name}
                   />
-                  <CardContent>
-                    <Typography variant="h6" align="center">
-                      {product.name}
-                    </Typography>
-                  </CardContent>
                 </Card>
               </Grid>
             ))}
