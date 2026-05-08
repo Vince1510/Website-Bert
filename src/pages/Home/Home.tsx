@@ -3,12 +3,6 @@ import Grid from "@mui/material/GridLegacy";
 import AutoCarousel from "../../components/AutoCarousel";
 import "./Home.scss";
 
-const meubeldiscountImages = Array.from({ length: 24 }, (_, i) => ({
-  src: `/assets/meubeldiscount/meubeldiscount${i + 1}.jpg`,
-  caption: `Meubeldiscount ${i + 1}`,
-  topic: "Meubeldiscount",
-}));
-
 const witgoedImages = Array.from({ length: 24 }, (_, i) => ({
   src: `/assets/witgoedhellevoetsluis/WitgoedHellevoetsluis${i + 1}.jpg`,
   caption: `Witgoed Hellevoetsluis ${i + 1}`,

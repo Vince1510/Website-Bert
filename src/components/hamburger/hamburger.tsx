@@ -99,7 +99,6 @@ export default function Hamburger() {
             <Collapse in={productsOpen} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
                 {[
-                  { path: "/meubeldiscount", label: "Meubeldiscount" },
                   {
                     path: "/witgoed-hellevoetsluis",
                     label: "Witgoed Hellevoetsluis",
